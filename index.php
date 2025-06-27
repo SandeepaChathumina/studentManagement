@@ -24,7 +24,7 @@
             <li><a href="sample.php">Home</a></li>
             <li><a href="student.php">Contact</a></li>
             <li><a href="teacher.php">Admission</a></li>
-            <li><a href="class.php" class="btn btn-success">Login</a></li>
+            <li><a href="login.php" class="btn btn-success">Login</a></li>
     </nav>
 
     <div class="section1">
