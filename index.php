@@ -26,5 +26,69 @@
             <li><a href="teacher.php">Admission</a></li>
             <li><a href="class.php" class="btn btn-success">Login</a></li>
     </nav>
+
+    <div class="section1">
+        <label class="image_text">We Teach Students With Care</label>
+        <img class="main_img" src="images/school.png" alt="">
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <img class="welcome_img" src="images/playground.jpg" alt="">
+        
+
+            </div>
+
+            <div class="col-md-8">
+                <h1>Welcome to Smart School</h1>
+
+                <p>Welcome to Smart School - the intelligent way to manage your educational institution! Our comprehensive school management system empowers administrators, teachers, students, and parents with powerful tools for attendance tracking, grade management, communication, and resource planning, all through an intuitive digital platform designed to save time, reduce paperwork, and enhance the learning experience for everyone in your school community.</p>
+        
+
+            </div>
+        
+
+        </div>
+        
+
+    </div>
+
+    <center>
+        <h1>Our Teachers</h1>
+    </center>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <img class="teacher" src="images/teacher1.png" alt="">
+                <p>Ms. Sarah Johnson – With over 12 years of experience in Mathematics, Ms. Johnson brings passion and innovation to every lesson. Her structured approach and interactive teaching methods help students master complex concepts with confidence.</p>
+
+            </div>
+
+            <div class="col-md-4">
+                <img class="teacher" src="images/teacher2.png" alt="">
+                <p>Mr. David Chen – A Literature teacher with a flair for storytelling, Mr. Chen creates a dynamic classroom where critical thinking and creativity thrive. His commitment to student growth extends beyond academics, fostering leadership and self-expression.</p>
+
+            </div>
+
+            <div class="col-md-4">
+                <img class="teacher" src="images/teacher3.png" alt="">
+                <p>Ms. Aisha Rahman – Specializing in Computer Science, Ms. Rahman integrates cutting-edge technology into her lessons, preparing students for the digital future. Her hands-on projects and coding workshops make learning both practical and exciting.
+
+</p>
+
+            </div>
+        
+        </div>
+
+    </div>
+
+    
+
 </body>
 </html>
