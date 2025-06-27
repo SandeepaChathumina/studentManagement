@@ -78,15 +78,82 @@
 
             <div class="col-md-4">
                 <img class="teacher" src="images/teacher3.png" alt="">
-                <p>Ms. Aisha Rahman – Specializing in Computer Science, Ms. Rahman integrates cutting-edge technology into her lessons, preparing students for the digital future. Her hands-on projects and coding workshops make learning both practical and exciting.
-
-</p>
+                <p>Ms. Aisha Rahman – Specializing in Computer Science, Ms. Rahman integrates cutting-edge technology into her lessons, preparing students for the digital future. Her hands-on projects and coding workshops make learning both practical and exciting.</p>
 
             </div>
         
         </div>
 
     </div>
+
+    <center>
+        <h1>Our Courses</h1>
+    </center>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <img class="teacher" src="images/web_development.png" alt="">
+                <h3>Web Developer</h3>
+
+            </div>
+
+            <div class="col-md-4">
+                <img class="teacher" src="images/graphic_design.png" alt="">
+                <h3>Graphic Designer</h3>
+
+            </div>
+
+            <div class="col-md-4">
+                <img class="teacher" src="images/digital_marketing.png" alt="">
+                <h3>Marketing</h3>
+
+
+            </div>
+        
+        </div>
+
+    </div>
+
+    <center>
+        <h1 class="adm">Admission Form</h1>
+    </center>
+
+    <div align="center" class="admission_form">
+
+    <form action="">
+        <div class="adm_int">
+            <label class="label_text">Name</label>
+            <input class="input_deg" type="text" name="name">
+        </div>    
+
+        <div class="adm_int">
+            <label class="label_text">Email</label>
+            <input class="input_deg" type="text" name="email">
+        </div>    
+
+        <div class="adm_int">
+            <label class="label_text">Phone</label>
+            <input class="input_deg" type="text" name="name">
+        </div>    
+
+        <div class="adm_int">
+            <label class="label_text">Message</label>
+            <textarea class="input_txt"></textarea>
+        </div>    
+
+        <div>
+            <input class="btn btn-primary" id="submit" type="submit">
+        </div>
+    </form>
+
+    </div>
+
+    <footer>
+        <h3 class="footer_text">All @copyright reserved by smartschool</h3>
+    </footer>
 
     
 
