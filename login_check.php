@@ -26,10 +26,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $row = mysqli_fetch_array($result);
 
     if($row["usertype"]=="student"){
+        $_SESSION['username']=$username;
+        $_SESSION['usertype']="student";
         header("Location: studenthome.php");
     }
 
     elseif($row["usertype"]=="admin"){
+        $_SESSION['username']=$username;
+        $_SESSION['usertype']="admin";
         header("Location: adminhome.php");
     }
 
