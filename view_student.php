@@ -71,6 +71,7 @@ session_start();
                 <th class="table_th">Phone</th>
                 <th class="table_th">Password</th>
                 <th class="table_th">Delete</th>
+                <th class="table_th">Update</th>
                 
             </tr>
 
@@ -82,7 +83,8 @@ session_start();
                         <td class='table_td'>{$row['email']}</td>
                         <td class='table_td'>{$row['phone']}</td>
                         <td class='table_td'>{$row['password']}</td>
-                        <td class='table_td'><a onClick=\"javascript:return confirm('Are you sure to delete this')\" href='delete.php?student_id={$row['id']}'>Delete</a></td>
+                        <td class='table_td'><a class='btn btn-danger'onClick=\"javascript:return confirm('Are you sure to delete this')\" href='delete.php?student_id={$row['id']}'>Delete</a></td>
+                        <td class='table_td'><a class='btn btn-primary'href='update_student.php?student_id={$row['id']}'>Update</a></td>
                       </tr>";
             }
             
