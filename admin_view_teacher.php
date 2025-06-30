@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+error_reporting(0);
 
     if(!isset($_SESSION['username'])){
         header("location:login.php");
@@ -25,7 +26,19 @@ session_start();
     $sql = "SELECT * FROM teacher";
     $result = mysqli_query($conn, $sql);
 
+    if($_GET['teacher_id']){
+        $id = $_GET['teacher_id'];
 
+        $sql_delete = "DELETE FROM teacher WHERE id='$id'";
+        $result_delete = mysqli_query($conn, $sql_delete);
+
+        if ($result_delete) {
+            echo "<script>alert('Teacher deleted successfully');</script>";
+            echo "<script>window.location.href='admin_view_teacher.php';</script>";
+        } else {
+            echo "Error deleting teacher: " . mysqli_error($conn);
+        }
+    }
 
 
 ?>
@@ -70,6 +83,7 @@ session_start();
                 <th class="table_th">Teacher Name</th>
                 <th class="table_th">About Teacher</th>
                 <th class="table_th">Image</th>
+                <th class="table_th">Delete</th>
             </tr>
 
             <?php
@@ -80,6 +94,11 @@ session_start();
                     <td class="table_td"><?php echo "{$row['name']}" ?></td>
                     <td class="table_td"><?php echo "{$row['description']}" ?></td>
                     <td class="table_td"><img src="<?php echo "{$row['image']}" ?>" style="width: 100px; height: 100px;"></td>
+                    <td class="table_td">
+                    <?php
+                    echo "<a onClick=\"javaxcript:return confirm('Are you sure to Delete this');\"href='admin_view_teacher.php?teacher_id={$row['id']}' class='btn btn-danger'>Delete</a>"
+                    ?>
+                    </td>
                 </tr>
                 <?php
             }
