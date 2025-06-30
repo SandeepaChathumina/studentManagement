@@ -84,6 +84,7 @@ error_reporting(0);
                 <th class="table_th">About Teacher</th>
                 <th class="table_th">Image</th>
                 <th class="table_th">Delete</th>
+                <th class="table_th">Update</th>
             </tr>
 
             <?php
@@ -97,6 +98,11 @@ error_reporting(0);
                     <td class="table_td">
                     <?php
                     echo "<a onClick=\"javaxcript:return confirm('Are you sure to Delete this');\"href='admin_view_teacher.php?teacher_id={$row['id']}' class='btn btn-danger'>Delete</a>"
+                    ?>
+                    </td>
+                    <td class="table_td">
+                    <?php
+                    echo "<a href='admin_update_teacher.php?teacher_id={$row['id']}'class='btn btn-primary'>Update</a>"
                     ?>
                     </td>
                 </tr>
